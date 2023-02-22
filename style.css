@@ -1,0 +1,508 @@
+* {
+    --fucshia: hsl(333, 100%, 43%);
+    --fucshia2: hsla(333, 100%, 43%, 0.548);
+    --white: hsl(0, 0%, 100%);
+    --whitetransparent: hsla(0, 0%, 100%, 0.741);
+    --gray: hsl(0, 8%, 91%);
+    --blue: hsl(227, 65%, 16%);
+    --blackTransparent: hsla(0, 0%, 0%, 0.822);
+    --darkgray: hsl(0, 1%, 50%);
+    --darkgray2: hsl(0, 1%, 22%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--gray);
+}
+
+/* INICIO  */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--blue);
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+}
+
+
+
+nav h3 {
+    color: var(--white);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("./asset/logo.png");
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+li a {
+    color: var(--fucshia);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+li a:hover {
+    color: var(--white);
+}
+
+
+.inicio {
+    background-image: url("./asset/background__welcome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.transparencia {
+    background-color: var(--blackTransparent);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.transparencia h1 {
+    font-weight: 900px;
+    font-size: 800%;
+    text-align: center;
+
+}
+
+.btn {
+    background-color: var(--fucshia);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 60px;
+    font-size: 200%;
+    font-weight: 400;
+}
+
+.transparencia .btn a:visited {
+    color: var(--white);
+}
+
+.btn:hover,
+.btn:hover a:visited {
+    color: var(--fucshia);
+    background-color: var(--white);
+
+}
+
+
+
+
+
+/* ACERCA  */
+.acerca {
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    padding-top: 8vh;
+}
+
+
+.cv {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.cv .texto {
+    height: 66%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cv h1,
+.cv h5 {
+    text-align: end;
+}
+
+.cv p {
+    font-weight: 600;
+    font-style: italic;
+    text-align: right;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: var(--darkgray2);
+}
+
+
+
+.cv .btn {
+    align-self: center;
+    margin-top: 60px;
+}
+
+.foto {
+    background-image: url("./asset/foto__perfil.jpg");
+    width: 33%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.habilidades {
+    width: 33%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+
+}
+
+
+.habilidades p {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--darkgray2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidad {
+    width: 100%;
+}
+
+.porcentaje {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.borde {
+    background-color: var(--blackTransparent);
+    height: 40px;
+    width: 90%;
+}
+
+.relleno {
+    background-color: var(--darkgray);
+    height: 100%;
+}
+
+.uno .relleno {
+    width: 90%;
+}
+
+.dos .relleno {
+    width: 85%;
+}
+
+.tres .relleno {
+    width: 80%;
+}
+
+.cuatro .relleno {
+    width: 75%;
+}
+
+.cinco .relleno {
+    width: 60%;
+}
+
+
+
+/* SERVICIOS  */
+.servicios {
+    height: 100vh;
+    padding-top: 8vh;
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
+/* PORTAFOLIO  */
+
+.portafolio {
+    height: 100vh;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray);
+
+}
+
+.bordeFucsia {
+    margin-top: 2vh;
+    font-weight: 400;
+    border-top: 4px solid var(--fucshia);
+    border-bottom: 4px solid var(--fucshia);
+}
+
+.fotos {
+    height: 80vh;
+    width: 70vw;
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "d e f";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portafolio .fotopor {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portafolio .foto1 {
+    grid-area: "a";
+    background-image: url("./asset/portfolio-1.jpg");
+}
+
+.portafolio .foto2 {
+    grid-area: "b";
+    background-image: url("./asset/portfolio-2.jpg");
+}
+
+.portafolio .foto3 {
+    grid-area: "c";
+    background-image: url("./asset/portfolio-3.jpg");
+}
+
+.portafolio .foto4 {
+    grid-area: "d";
+    background-image: url("./asset/portfolio-4.jpg");
+}
+
+.portafolio .foto5 {
+    grid-area: "e";
+    background-image: url("./asset/portfolio-5.jpg");
+}
+
+.portafolio .foto6 {
+    grid-area: "f";
+    background-image: url("./asset/portfolio-6.jpg");
+}
+
+
+
+
+
+
+
+
+/* TESTIMONIOS  */
+
+.testimonios {
+    height: 100vh;
+    padding-top: 8vh;
+
+    background-image: url("./asset/hero-image-customers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonios .transparente {
+    height: 100%;
+    background-color: var(--whitetransparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+
+}
+
+.testimonios h1 {
+    margin-top: 2vh;
+    font-weight: 400;
+    border-bottom: 4px solid var(--fucshia);
+}
+
+.testimonios .container {
+    height: 55%;
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-self: center;
+
+}
+
+.foto__cliente {
+    background-image: url("./asset/customer-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonios .container p {
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.testimonios .container h3 {
+    color: var(--fucshia)
+}
+
+.testimonios .estrellas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+/* CONTACTO  */
+
+.contacto {
+    height: 100vh;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    gap: 5px;
+}
+
+.contacto .btn:hover {
+    border: 1px solid var(--fucshia);
+}
+
+.datos {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 30vh;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.datos .container {
+    border: solid 1px var(--blackTransparent);
+    border-radius: 30px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.datos .container a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.datos .container p {
+    font-weight: 400;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 48vw;
+    height: 40vh;
+    border: solid 1px var(--blackTransparent);
+    border-radius: 10px;
+}
+
+.registro input[type="textarea"] {
+    width: 30vw;
+    border: solid;
+}
+
+.registro textarea {
+    width: 98%;
+    margin-bottom: 30px;
+}
+
+
+.registro .btn{
+    width: 35%;
+    font-size: 90%;
+}
+
+.registro .inputs{
+    display: flex;
+}
+
+.registro .inputs input{
+    width: 24vw;
+}
+
+
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    height: 20vh;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
